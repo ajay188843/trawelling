@@ -1,0 +1,37 @@
+Version 1.0
+i) Intial version Release
+Version 1.0.1
+	-- Incorrect use of home.php
+	-- Multiple escaping issues
+	-- Removed Custom Headers support.
+	-- searchform.php - get_search_query() escaping removed. 
+	-- home.php - added wp_reset_postdata();
+	-- contact.php - you have untranslatable text strings 
+	-- Corected demo content.
+
+Version 1.0.2
+	-- Removed slider.
+	-- Corrected traslation.
+	-- Corrected Screenshot.
+
+Version 1.0.3
+	-- Corrected styling issues.
+	-- Fixed resources not found issue.
+
+Version 1.0.4
+	-- Change resources
+
+Version 1.0.5
+	-- Used antispambot for email
+
+Version 1.0.6
+	-- Screenshot changed.
+
+Version 1.0.7
+	-- changes in index.php to modify look.
+
+Version 1.0.8
+	-- styling changed
+	
+Version 1.0.9
+	-- styling and css changes
