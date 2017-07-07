@@ -75,8 +75,10 @@ class Travelling {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
-
+		
 	}
+	
+	 
 
 	/**
 	 * Load the required dependencies for this plugin.
@@ -153,6 +155,7 @@ class Travelling {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		
 
 	}
 

@@ -53,6 +53,8 @@ class Travelling_Public {
 		$this->version = $version;
 
 	}
+	
+	
 
 	/**
 	 * Register the stylesheets for the public-facing side of the site.

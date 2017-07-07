@@ -29,8 +29,24 @@ class Travelling_Activator {
 	 *
 	 * @since    1.0.0
 	 */
+	 
 	public static function activate() {
-
+		add_action('admin_menu', 'setup_dashboard_page');	
 	}
+	
+	function setup_dashboard_page(){
+		add_menu_page(
+			__('My Own Plugin'), 'Vipul Own Plugin', 'manage_options', 'travelling', 'my_plugin_options', get_plugins_url('travelling/images/vipul.png'), 2
+		);
+		
+	}
+	
+	function my_plugin_options() {
+		echo "Welcome To Travelling Plugin";
+	}
+	
+		
+		
+	
 
 }

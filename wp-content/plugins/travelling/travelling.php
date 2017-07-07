@@ -46,6 +46,7 @@ function activate_travelling() {
 function deactivate_travelling() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-travelling-deactivator.php';
 	Travelling_Deactivator::deactivate();
+
 }
 
 register_activation_hook( __FILE__, 'activate_travelling' );
@@ -73,3 +74,14 @@ function run_travelling() {
 
 }
 run_travelling();
+ add_action('admin_menu', 'setup_dashboard_page');
+ 
+ function setup_dashboard_page(){
+		add_menu_page(
+            __('My Own Plugin'), 'Vipul Own Plugin', 'manage_options', 'my_plugin_options', '', plugins_url('my-plugin/images/vipul.png'), 2
+			);
+		
+	}
+function my_plugin_options() {
+			echo "Welcome To Travelling Plugin";
+		}
